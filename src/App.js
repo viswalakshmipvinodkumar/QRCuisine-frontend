@@ -6,7 +6,7 @@ import RestaurantRegistration from "./pages/RestaurantRegistration";
 import About from "./pages/About";
 import RestaurantLogin from "./pages/RestaurantLogin";
 
-
+//added a new comment
 function App() {
   return (
     <Router>
