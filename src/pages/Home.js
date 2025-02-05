@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex flex-col">
       {/* Navbar */}
-      <nav className="bg-yellow-300 w-full p-4 flex justify-between items-center">
+      <nav className="bg-yellow-300 w-full p-1 flex justify-between items-center">
         {/* Logo inside a rectangle */}
-        <div className="bg-white border-4 border-black px-2 py-1">
+        <div className="bg-black border-1 border-black px-3 py-1">
           <img src="/logo.png" alt="QR Cuisine Logo" className="h-12 w-auto" />
         </div>
 
