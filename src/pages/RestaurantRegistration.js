@@ -13,11 +13,10 @@ const Navbar = () => {
         <Link to="/about" className="text-black font-semibold hover:underline">About</Link>
         <Link to="/login" className="text-black font-semibold hover:underline">Login</Link>
         <Link to="/restaurant-registration">
-              <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
-                      Register
-              </button>
+          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
+            Register
+          </button>
         </Link>
-       
       </div>
     </nav>
   );
@@ -49,12 +48,18 @@ const RestaurantRegistration = () => {
           'Content-Type': 'application/json'
         }
       });
+
       if (response.status === 201) {
+        console.log("Registration Successful! Redirecting...");
+        // Redirect to the success page after a successful registration
+        console.log("API Response:", response);
+
         navigate('/restaurant-success');
+        
       }
     } catch (err) {
       setError('There was an error registering the restaurant. Please check your input and try again.');
-      console.error('Error registering restaurant:', err); 
+      console.error('Error registering restaurant:', err);
     }
   };
 
